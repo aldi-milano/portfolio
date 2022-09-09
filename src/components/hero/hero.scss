@@ -1,0 +1,139 @@
+@use '../../scss/utility' as *;
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  // background-color: #1864ab;
+  // background-color: #165c9e;
+  background-color: #002f65;
+  background-image: url(../../assets/background-texture/axiom-pattern.png);
+}
+
+.hero__container {
+  padding: rem(128) rem(32);
+  max-width: rem(1440);
+  margin: 0 auto;
+
+  .header {
+    @include flex(flex-start, center);
+    font-size: rem(64);
+    color: white;
+    font-weight: 900;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: rem(20);
+    line-height: 1.2;
+
+    &::before {
+      content: 'ALDI MILANO';
+      display: block;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+      position: absolute;
+      top: 3%;
+      left: -1%;
+      transform: translate(8px, 2px);
+      // border-bottom: 1px solid #fff;
+    }
+
+    &__separator {
+      font-weight: 100;
+    }
+
+    &__position {
+      font-weight: 100;
+      font-size: rem(48);
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: rem(32);
+    font-weight: 400;
+
+    .coma {
+      font-size: rem(36);
+      color: #fff;
+      font-weight: 900;
+    }
+  }
+
+  .condition {
+    font-size: rem(56);
+    color: #fff;
+    font-weight: 400;
+
+    span {
+      // color: #ec2c39;
+      // color: #fee50f;
+      color: #ff922b;
+      font-weight: 900;
+      position: relative;
+      letter-spacing: -3px;
+      font-size: rem(64);
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: rem(128) rem(16);
+
+    .header {
+      @include flex(center, flex-start);
+      flex-direction: column;
+      font-size: rem(40);
+      color: white;
+      font-weight: 900;
+      position: relative;
+      letter-spacing: 1px;
+      margin-bottom: rem(14);
+
+      &::before {
+        content: 'ALDI MILANO';
+        display: block;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+        position: absolute;
+        top: 2%;
+        left: -5%;
+        transform: translate(12px, 1px);
+      }
+
+      &__separator {
+        display: none;
+        font-weight: 100;
+      }
+
+      &__position {
+        font-weight: 100;
+        font-size: rem(28);
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: rem(32);
+      font-weight: 400;
+
+      .coma {
+        font-size: rem(36);
+        color: #fff;
+      }
+    }
+
+    .condition {
+      font-size: rem(44);
+      color: #fff;
+      font-weight: 400;
+
+      span {
+        // color: #ec2c39;
+        // color: #fee50f;
+        color: #ff922b;
+        font-weight: 900;
+        position: relative;
+        letter-spacing: -3px;
+        font-size: rem(48);
+      }
+    }
+  }
+}
