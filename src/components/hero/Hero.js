@@ -13,10 +13,16 @@ function Hero() {
             and<span class='coma'>,</span>
           </p>
           <h1 className='condition'>
-            I'M <span>DISABLED</span>
+            I Am <span>Disabled</span>
           </h1>
         </div>
-        <p className='hero__paragraph'></p>
+        <div className='hero__paragraph'>
+          <p className='paragraph'>
+            An ordinary man who has a huge passionate and curiosity about Web
+            Development. Makes his first step up to take a journey as a real Web
+            Developer.
+          </p>
+        </div>
       </section>
     </div>
   );
