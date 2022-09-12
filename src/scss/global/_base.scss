@@ -11,9 +11,10 @@
   box-sizing: inherit;
 }
 
-// ::selection {
-//   background: $complementary;
-// }
+::selection {
+  background: $complementary;
+  color: #fff;
+}
 
 html {
   font-size: 100%;
@@ -23,16 +24,37 @@ body {
   font-family: $font-mulish;
   font-weight: 400;
   line-height: 1;
-  font-size: rem(16);
+  font-size: rem(20);
   color: #fff;
   background-color: $primary;
 }
 
-a,
-a:visited,
-a:active {
+a {
   text-decoration: none;
-  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -4%;
+    left: 0;
+    background-color: $complementary;
+    opacity: 0.7;
+    transition: width 0.2s;
+  }
+
+  &:link,
+  &:visited,
+  &:active {
+    cursor: pointer;
+    color: $complementary;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 button {

@@ -1,19 +1,22 @@
 @use '../../scss/utility' as *;
 
+.background {
+  background-color: #002f65;
+  background-image: url(../../assets/background-texture/axiom-pattern.png);
+}
+
 .hero {
   height: 100vh;
   width: 100%;
   // background-color: #1864ab;
   // background-color: #165c9e;
-  background-color: #002f65;
-  background-image: url(../../assets/background-texture/axiom-pattern.png);
-  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+  border-bottom: 1px solid $gray-gradient;
+  max-width: rem(1440);
+  margin: 0 auto;
 }
 
 .hero__container {
   padding: rem(96) rem(32) rem(0);
-  max-width: rem(1440);
-  margin: 0 auto;
   margin-bottom: rem(52);
 
   .header {
@@ -60,7 +63,7 @@
     font-size: rem(56);
     font-weight: 400;
 
-    span {
+    .disabled {
       // color: #ec2c39;
       // color: #fee50f;
       color: #ff922b;
@@ -69,6 +72,10 @@
       letter-spacing: -3px;
       font-size: rem(64);
     }
+  }
+
+  .quotation-mark {
+    font-weight: 900;
   }
 
   @include breakpoint(tablet) {
@@ -118,7 +125,7 @@
       font-size: rem(44);
       font-weight: 400;
 
-      span {
+      .disabled {
         // color: #ec2c39;
         // color: #fee50f;
         color: #ff922b;
@@ -144,17 +151,9 @@
   .hero__paragraph {
     padding: 0 rem(16);
     color: $tint;
-    font-size: rem(20);
+    font-size: rem(16);
     max-width: rem(540);
     line-height: 1.3;
     letter-spacing: 1px;
-
-    // a {
-    //   &:link,
-    //   &:visited {
-    //     color: $complementary;
-    //     text-decoration: none;
-    //   }
-    // }
   }
 }

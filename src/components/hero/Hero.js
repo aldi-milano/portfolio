@@ -2,7 +2,7 @@ import './hero.scss';
 
 function Hero() {
   return (
-    <div>
+    <div className='background'>
       <section class='hero'>
         <div class='hero__container'>
           <h1 class='header'>
@@ -10,16 +10,17 @@ function Hero() {
             <span class='header__position'>FRONT-END DEV</span>
           </h1>
           <p>
-            and<span class='coma'>,</span>
+            and<span class='quotation-mark'>,</span>
           </p>
           <h1 className='condition'>
-            I Am <span>Disabled</span>
+            I<span className='quotation-mark'>’</span>m{' '}
+            <span className='disabled'>Disabled</span>
           </h1>
         </div>
         <div className='hero__paragraph'>
           <p className='paragraph'>
             An ordinary man who has a huge passionate and curiosity about Web
-            Development. Makes his first step up to take a journey as a real Web
+            Development. Makes his first step up to take a journey as a Web
             Developer.
           </p>
         </div>
