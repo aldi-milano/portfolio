@@ -1,9 +1,22 @@
 @use '../utility' as *;
 
-//PARAGRAPH DEKSTOP
-$p-md: rem(20);
-$p-sm: rem(18);
+// DESKTOP
+//PARAGRAPH
+$pd-lg: rem(22);
+$pd-md: rem(20);
+$pd-sm: rem(18);
 
-// HEADING DESKTOP
-$h-2: rem(28);
-$h-3: rem(24);
+// HEADING
+$hd-2: rem(28);
+$hd-3: rem(24);
+//////////////////////
+
+// MOBILE
+//PARAGRAPH
+$pm-lg: rem(20);
+$pm-md: rem(18);
+$pm-sm: rem(16);
+
+// HEADING
+$hm-2: rem(24);
+$hm-3: rem(22);

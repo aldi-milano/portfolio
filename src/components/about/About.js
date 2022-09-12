@@ -4,7 +4,7 @@ import profile from '../../assets/profille-image/portfolio.jpg';
 
 function About() {
   return (
-    <div>
+    <>
       <section className='about'>
         <article className='content'>
           <div className='content__title'>
@@ -56,7 +56,7 @@ function About() {
           </div>
         </article>
       </section>
-    </div>
+    </>
   );
 }
 

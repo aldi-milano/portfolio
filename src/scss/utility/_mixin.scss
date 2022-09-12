@@ -1,4 +1,4 @@
-@use './function' as f;
+@use './function' as *;
 
 @mixin flex($jus: center, $alg: center) {
   display: flex;
@@ -7,9 +7,9 @@
 }
 
 $units: (
-  'mobile': f.rem(22),
-  'tablet': f.rem(24),
-  'desktop': f.rem(26),
+  'mobile': rem(22),
+  'tablet': rem(24),
+  'desktop': rem(26),
 );
 
 @mixin icon($unit) {

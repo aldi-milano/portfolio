@@ -1,0 +1,70 @@
+@use '../../scss/utility' as *;
+@use '../../scss/global' as *;
+
+.works {
+  padding: rem(96) 0;
+  max-width: rem(1440);
+  margin: 0 auto;
+}
+
+.work {
+  &__title {
+    @include flex(flex-start, center);
+    padding: 0 rem(32);
+    margin-bottom: rem(32);
+    gap: rem(16);
+    .title {
+      font-size: $hd-2;
+      font-weight: 700;
+      color: #e6eaf0;
+    }
+
+    .line {
+      height: 1px;
+      width: 77%;
+      background-color: $secondary;
+    }
+  }
+}
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  @include flex();
+
+  &__picture {
+    height: 100%;
+    flex: 1;
+    background-color: #fff;
+    @include flex();
+
+    .logo-alpaca {
+      width: 70%;
+    }
+  }
+
+  &__desc {
+    height: 100%;
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    // padding: 0 rem(32);
+    @include flex(flex-start, center);
+
+    .description {
+      padding: 0 rem(64);
+      .title-alpaca {
+        display: block;
+        font-size: rem(44);
+        margin-bottom: rem(32);
+      }
+    }
+  }
+}
+
+.swiper-pagination-fraction {
+  // border: 2px solid $complementary;
+  // background-color: $complementary;
+  color: $complementary;
+  font-weight: 500;
+}

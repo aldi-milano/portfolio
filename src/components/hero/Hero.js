@@ -14,14 +14,13 @@ function Hero() {
           </p>
           <h1 className='condition'>
             I<span className='quotation-mark'>’</span>m{' '}
-            <span className='disabled'>Disabled</span>
+            <span className='disabled'>Disabled.</span>
           </h1>
         </div>
         <div className='hero__paragraph'>
           <p className='paragraph'>
-            An ordinary man who has a huge passionate and curiosity about Web
-            Development. Makes his first step up to take a journey as a Web
-            Developer.
+            A man who has a huge passionate and curiosity about Web Development.
+            Makes his first step up to take a journey as a Web Developer.
           </p>
         </div>
       </section>
