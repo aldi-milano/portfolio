@@ -18,17 +18,16 @@ function About() {
                 Samudra Milano, I live in Bandung, Indonesia. As you read from
                 my information above, I am a disabled person,{' '}
                 <a href='https://www.accessibility.com/glossary/hard-of-hearing#:~:text=Hard%20of%20Hearing%20(HoH)'>
-                  Hard of Hearing (HoH)
+                  Hard of Hearing
                 </a>{' '}
                 to be exact, because of side effect of high dose medication that
                 I took for over a year. Tuberculosis had gotten me quite serious
                 back then because it’s escalated to be{' '}
                 <a href='https://www.who.int/news-room/questions-and-answers/item/tuberculosis-multidrug-resistant-tuberculosis-(mdr-tb)'>
-                  Multidrug-resistant tuberculosis (MDR-TB)
+                  (MDR-TB)
                 </a>{' '}
                 around 2018-2019. Thankfully to God I withstand it and able to
-                write this portfolio right now and doing things such a learning
-                Web Development.
+                write this portfolio right now and doing things normally.
               </p>
               <p className='paragraph-2'>
                 You might be wondering or asking how I’m communicating with

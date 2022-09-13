@@ -5,6 +5,10 @@
   padding: rem(96) 0;
   max-width: rem(1440);
   margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    padding: rem(720) 0 rem(96) 0;
+  }
 }
 
 .work {
@@ -25,6 +29,19 @@
       background-color: $secondary;
     }
   }
+
+  @include breakpoint(tablet) {
+    &__title {
+      padding: 0 rem(16);
+      .title {
+        font-size: $hm-2;
+      }
+
+      .line {
+        width: 50%;
+      }
+    }
+  }
 }
 
 .showcase {
@@ -34,37 +51,235 @@
 
   &__picture {
     height: 100%;
+    width: 100%;
     flex: 1;
     background-color: #fff;
     @include flex();
-
-    .logo-alpaca {
-      width: 70%;
-    }
   }
 
   &__desc {
     height: 100%;
     flex: 1;
     background-color: #000;
-    color: #fff;
     // padding: 0 rem(32);
     @include flex(flex-start, center);
 
     .description {
       padding: 0 rem(64);
-      .title-alpaca {
+      .title {
         display: block;
         font-size: rem(44);
         margin-bottom: rem(32);
+        color: #fff;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+    height: 100vh;
+
+    &__picture {
+      height: 100vh;
+      width: 100%;
+      flex: 1;
+      background-color: #fff;
+      @include flex();
+    }
+
+    &__desc {
+      height: 100%;
+      flex: 1;
+      background-color: #000;
+      color: #fff;
+      @include flex(flex-start, center);
+
+      .description {
+        padding: rem(16);
+        .title {
+          color: #fff;
+          display: block;
+          font-size: $hm-2;
+          margin-bottom: rem(32);
+        }
       }
     }
   }
 }
 
-.swiper-pagination-fraction {
-  // border: 2px solid $complementary;
-  // background-color: $complementary;
+.showcase-1 {
+  .logo-alpaca {
+    width: 70%;
+  }
+
+  p {
+    color: $tint;
+    line-height: 1.3;
+  }
+}
+
+.showcase-2 {
+  .showcase__desc {
+    display: block;
+    padding: rem(64) 0;
+
+    .description {
+      width: 70%;
+      p:last-of-type {
+        margin-bottom: rem(80);
+      }
+
+      .about-desc {
+        line-height: 1.3;
+        margin-bottom: rem(20);
+        color: $tint;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .showcase__desc {
+      display: block;
+      padding: rem(16);
+
+      .description {
+        width: 100%;
+        height: 100%;
+        p:last-of-type {
+          margin-bottom: rem(56);
+        }
+
+        .about-desc {
+          line-height: 1.3;
+          margin-bottom: rem(20);
+          color: $tint;
+        }
+      }
+    }
+  }
+}
+
+.showcase-3 {
+  .showcase__desc {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    gap: rem(32);
+
+    .description {
+      width: 70%;
+
+      p {
+        line-height: 1.3;
+        color: $tint;
+      }
+    }
+
+    .stack {
+      @include flex(center, flex-start);
+      gap: rem(16);
+      padding: 0 rem(64);
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .showcase__desc {
+      .description {
+        width: 100%;
+
+        p {
+          line-height: 1.3;
+          color: $tint;
+        }
+      }
+
+      .stack {
+        @include flex(center, flex-start);
+        gap: rem(16);
+        padding: 0 rem(16);
+      }
+    }
+  }
+}
+
+.showcase-4 {
+  .showcase__picture {
+    @include flex();
+
+    .homepage-display {
+      width: 100%;
+      align-self: flex-end;
+
+      .homepage {
+        width: 100%;
+        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
+      }
+    }
+
+    .profile-display {
+      width: 100%;
+
+      .profile {
+        width: 100%;
+        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
+      }
+    }
+
+    .checkout-display {
+      width: 100%;
+      align-self: flex-start;
+
+      .checkout {
+        width: 100%;
+        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
+      }
+    }
+  }
+}
+
+.showcase-5 {
+  .showcase__picture {
+    @include flex();
+
+    .checkout-display {
+      width: 100%;
+
+      .checkout {
+        width: 70%;
+        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
+      }
+    }
+
+    .login-display {
+      width: 50%;
+      position: absolute;
+      bottom: 5%;
+      right: -15%;
+
+      .login {
+        width: 40%;
+        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
+      }
+    }
+  }
+}
+
+////////////////////////////////
+
+.swiper-pagination-bullet {
+  border: 2px solid $complementary;
+  background-color: $complementary;
   color: $complementary;
   font-weight: 500;
+}
+
+.swiper-button-prev {
+  color: $complementary;
+}
+
+.swiper-button-next {
+  color: rgba(255, 146, 43);
+}
+
+.swiper-button-disabled {
+  display: none;
 }
