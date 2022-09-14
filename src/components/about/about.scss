@@ -15,23 +15,30 @@
       @include flex(flex-start, center);
       margin-bottom: rem(32);
       gap: rem(16);
+      position: relative;
+
       .title {
         font-size: $hd-2;
         font-weight: 700;
         color: #e6eaf0;
+        background-color: $primary;
+        padding: 0 10px 0 0;
       }
 
-      .line {
-        height: 1px;
-        width: 85%;
-        background-color: $secondary;
+      &::after {
+        content: '';
+        border-bottom: 1px solid $secondary;
+        width: 100%;
+        position: absolute;
+        bottom: 50%;
+        z-index: -1;
       }
     }
 
     .content-main {
       display: grid;
       grid-template-columns: 3fr 1fr;
-      gap: rem(16);
+      gap: rem(32);
 
       .image-profile {
         width: rem(224);

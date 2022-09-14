@@ -116,7 +116,7 @@
 .hero__paragraph {
   padding: 0 rem(32);
   color: $tint;
-  font-size: $pd-lg;
+  font-size: $pd-md;
   max-width: rem(636);
   line-height: 1.3;
   letter-spacing: 1px;
@@ -125,7 +125,8 @@
 @include breakpoint(tablet) {
   .hero__paragraph {
     padding: 0 rem(16);
-    font-size: $pm-lg;
+    font-size: $pm-md;
     max-width: rem(540);
+    line-height: 1.5;
   }
 }

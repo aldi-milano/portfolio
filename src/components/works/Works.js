@@ -18,8 +18,9 @@ function Works() {
       <section className='works'>
         <article className='work'>
           <div className='work__title'>
-            <h1 className='title'>Things I built</h1>
-            <div className='line'></div>
+            <h1 className='title'>
+              <span>Things I built</span>
+            </h1>
           </div>
           <Swiper
             slidesPerView={1}
