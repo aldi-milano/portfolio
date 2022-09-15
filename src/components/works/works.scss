@@ -52,43 +52,58 @@
   width: 100%;
 
   &.slide-1 {
+    width: 100%;
     height: 100vh;
+    padding: rem(48);
     background-color: #fff;
     @include flex(flex-start, center);
     flex-direction: column;
-    gap: rem(64);
 
-    .slide__picture {
-      padding: rem(32);
-      width: 100%;
-
-      .logo-alpaca {
+    .slide__logo {
+      width: 40%;
+      .logo {
         width: 100%;
       }
     }
 
     .slide__desc {
       color: #000;
+      @include flex();
+      flex-direction: column;
+      gap: rem(16);
+      .title {
+        font-size: rem(40);
+      }
 
-      .description {
-        @include flex(center, flex-start);
-        flex-direction: column;
-        gap: rem(16);
-
-        .title {
-          font-size: rem(40);
-        }
+      P {
+        font-size: $pd-md;
       }
     }
 
     @include breakpoint(tablet) {
       padding: rem(16);
-      .slide__picture {
+      gap: rem(56);
+
+      .slide__logo {
         width: 100%;
+        .logo {
+          width: 100%;
+        }
       }
 
-      p {
-        line-height: 1.3;
+      .slide__desc {
+        color: #000;
+        @include flex();
+        flex-direction: column;
+        gap: rem(16);
+        .title {
+          font-size: rem(40);
+        }
+
+        P {
+          font-size: $pm-md;
+          line-height: 1.3;
+        }
       }
     }
   }
@@ -207,6 +222,51 @@
         .stack {
           @include flex(flex-start, center);
           gap: rem(16);
+        }
+      }
+    }
+  }
+
+  &.slide-4 {
+    height: 100vh;
+    background-color: #fff;
+    @include flex();
+
+    .slide__picture-desktop {
+      @include flex();
+      padding: rem(32);
+      width: 100%;
+
+      .logo-alpaca {
+        width: 100%;
+      }
+
+      .logo-alpaca-real {
+        width: 60%;
+      }
+    }
+
+    .slide__picture-mobile {
+      display: none;
+    }
+
+    @include breakpoint(tablet) {
+      padding: rem(16);
+
+      .slide__picture-desktop {
+        display: none;
+      }
+
+      .slide__picture-mobile {
+        display: block;
+
+        .logo-mobile {
+          display: block;
+          width: 100%;
+        }
+
+        .screenshoot-mobile {
+          width: 100%;
         }
       }
     }

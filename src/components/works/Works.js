@@ -12,6 +12,11 @@ import homepage from '../../assets/screenshoot/homepage.png';
 import profile from '../../assets/screenshoot/profile.png';
 import checkout from '../../assets/screenshoot/checkout.png';
 import item from '../../assets/screenshoot/item.png';
+import itemM from '../../assets/screenshoot/mobile/item.jpg';
+import homepageM from '../../assets/screenshoot/mobile/homepage.jpg';
+import checkoutM from '../../assets/screenshoot/mobile/checkout.jpg';
+import mixM from '../../assets/screenshoot/mobile/mix.jpg';
+import logoM from '../../assets/screenshoot/mobile/alpaca-logo.png';
 
 function Works() {
   return (
@@ -35,6 +40,20 @@ function Works() {
             className='mySwiper'
           >
             <SwiperSlide>
+              <div className='slide slide-1'>
+                <div className='slide__logo'>
+                  <img src={logoM} alt='alpaca logo' className='logo' />
+                </div>
+                <div className='slide__desc'>
+                  <h1 className='title'>Alpaca</h1>
+                  <p>
+                    Fictional store using{' '}
+                    <a href='https://fakestoreapi.com/'>Fakestore</a> API
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
               <div className='slide slide-2'>
                 <div className='description'>
                   <h2 className='title'>About The Project</h2>
@@ -46,7 +65,7 @@ function Works() {
                   </p>
                   <p className='about-desc'>
                     On this website you can get various stuff from outfit to
-                    electronic. You can whether put them on the Cart or put it
+                    electronic. You can whether put them in the Cart or put it
                     in the Wishlist, whatever you desire, and doing simulation
                     transactional after that.
                   </p>
@@ -91,7 +110,7 @@ function Works() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='slide slide-1'>
+              <div className='slide slide-4'>
                 <SwiperSlide>
                   <Swiper
                     autoplay={{
@@ -102,47 +121,82 @@ function Works() {
                     className='swiper-2'
                   >
                     <SwiperSlide>
-                      <div className='slide__picture'>
+                      <div className='slide__picture-desktop'>
                         <img
                           src={logo}
                           alt='logo alpaca'
-                          className='logo-alpaca'
+                          className='logo-alpaca-real'
+                        />
+                      </div>
+                      <div className='slide__picture-mobile'>
+                        <img
+                          src={logoM}
+                          alt='logo alpaca'
+                          className='logo-mobile'
                         />
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className='slide__picture'>
+                      <div className='slide__picture-desktop'>
                         <img
                           src={homepage}
                           alt='logo alpaca'
                           className='logo-alpaca'
                         />
                       </div>
+                      <div className='slide__picture-mobile'>
+                        <img
+                          src={homepageM}
+                          alt='logo alpaca'
+                          className='screenshoot-mobile'
+                        />
+                      </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className='slide__picture'>
+                      <div className='slide__picture-desktop'>
                         <img
                           src={profile}
                           alt='logo alpaca'
                           className='logo-alpaca'
                         />
                       </div>
+                      <div className='slide__picture-mobile'>
+                        <img
+                          src={itemM}
+                          alt='logo alpaca'
+                          className='screenshoot-mobile'
+                        />
+                      </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className='slide__picture'>
+                      <div className='slide__picture-desktop'>
                         <img
                           src={item}
                           alt='logo alpaca'
                           className='logo-alpaca'
                         />
                       </div>
+                      <div className='slide__picture-mobile'>
+                        <img
+                          src={checkoutM}
+                          alt='logo alpaca'
+                          className='screenshoot-mobile'
+                        />
+                      </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <div className='slide__picture'>
+                      <div className='slide__picture-desktop'>
                         <img
                           src={checkout}
                           alt='logo alpaca'
                           className='logo-alpaca'
+                        />
+                      </div>
+                      <div className='slide__picture-mobile'>
+                        <img
+                          src={mixM}
+                          alt='logo alpaca'
+                          className='screenshoot-mobile'
                         />
                       </div>
                     </SwiperSlide>
