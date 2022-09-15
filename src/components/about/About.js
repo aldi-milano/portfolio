@@ -9,7 +9,6 @@ function About() {
         <article className='content'>
           <div className='content__title'>
             <h1 className='title'>About Me</h1>
-            {/* <div className='line'></div> */}
           </div>
           <div className='content-main'>
             <div className='content__paragraph'>
@@ -25,18 +24,19 @@ function About() {
                 <a href='https://www.who.int/news-room/questions-and-answers/item/tuberculosis-multidrug-resistant-tuberculosis-(mdr-tb)'>
                   (MDR-TB)
                 </a>{' '}
-                around 2018-2019. Thankfully to God I withstand it and able to
-                write this portfolio right now and doing things normally, except
-                my hearing.
+                around 2018-2019. Thankfully to God I managed to overcome it and
+                able to write this portfolio right now and doing things normally
+                and fine, except my hearing of course.
               </p>
               <p className='paragraph-2'>
                 You might be wondering or asking how I’m communicating with
                 others? Well, firstly I’m not completely deaf, so I can barely
                 hear what people say in person, but, when it comes to devices
                 such a phone, video conference, TV and any other devices, I can
-                say I can’t hear them properly or nothing at all. If I may to
-                explain, it’s more or less like mumbling, gibberish or static
-                high pitch noise sometimes. So my comprehension best with text.
+                say I can’t hear them properly or nothing at all. If I may
+                explain, it’s more or less like mumbling, gibberish or even
+                static high pitch noise sometimes. So my comprehension best with
+                text.
               </p>
               <p className='paragraph-3'>
                 I found myself having huge passion on everything about Web

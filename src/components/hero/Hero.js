@@ -19,8 +19,9 @@ function Hero() {
         </div>
         <div className='hero__paragraph'>
           <p className='paragraph'>
-            Having a huge passionate and curiosity about Web Development. Makes
-            his first step up to take a journey as a Web Developer.
+            A Freshman, have none experience prior in the Software industry.
+            Having a huge passionate and curiosity about Web Development. Eager
+            to make his first step up to take a long journey as a Web Developer.
           </p>
         </div>
       </section>

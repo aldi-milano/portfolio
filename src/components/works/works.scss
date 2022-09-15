@@ -2,262 +2,218 @@
 @use '../../scss/global' as *;
 
 .works {
-  padding: rem(96) 0;
+  padding-bottom: rem(96);
   max-width: rem(1440);
   margin: 0 auto;
-
-  @include breakpoint(tablet) {
-    padding: rem(720) 0 rem(96) 0;
-  }
 }
 
-.work {
-  &__title {
-    padding: 0 rem(32);
+.content__works {
+  width: 100%;
+}
+
+.container-title {
+  padding: 0 rem(32);
+
+  .content__works-title {
+    @include flex(flex-start, center);
     margin-bottom: rem(32);
     gap: rem(16);
+    position: relative;
 
     .title {
-      display: block;
-      width: 100%;
-      border-bottom: 1px solid $secondary;
-      line-height: 1px;
-      margin: 10px 0 20px;
+      font-size: $hd-2;
+      font-weight: 700;
+      background-color: $primary;
+      padding: 0 10px 0 0;
+    }
 
-      span {
-        background: $primary;
-        padding: 0 10px;
-        color: white;
-      }
+    &::after {
+      content: '';
+      border-bottom: 1px solid $secondary;
+      width: 100%;
+      position: absolute;
+      bottom: 50%;
+      z-index: -1;
     }
   }
 
   @include breakpoint(tablet) {
     padding: 0 rem(16);
-  }
-}
 
-.showcase {
-  height: 100vh;
-  width: 100%;
-  @include flex();
-
-  &__picture {
-    height: 100%;
-    width: 100%;
-    flex: 1;
-    background-color: #fff;
-    @include flex();
-  }
-
-  &__desc {
-    height: 100%;
-    flex: 1;
-    background-color: #000;
-    // padding: 0 rem(32);
-    @include flex(flex-start, center);
-
-    .description {
-      padding: 0 rem(64);
+    .content__works-title {
       .title {
-        display: block;
-        font-size: rem(44);
-        margin-bottom: rem(32);
-        color: #fff;
+        font-size: $hm-2;
       }
     }
   }
+}
 
-  @include breakpoint(tablet) {
-    flex-direction: column;
+.slide {
+  width: 100%;
+
+  &.slide-1 {
     height: 100vh;
+    background-color: #fff;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    gap: rem(64);
 
-    &__picture {
-      height: 100vh;
+    .slide__picture {
+      padding: rem(32);
       width: 100%;
-      flex: 1;
-      background-color: #fff;
-      @include flex();
+
+      .logo-alpaca {
+        width: 100%;
+      }
     }
 
-    &__desc {
-      height: 100%;
-      flex: 1;
-      background-color: #000;
-      color: #fff;
-      @include flex(flex-start, center);
+    .slide__desc {
+      color: #000;
 
       .description {
-        padding: rem(16);
+        @include flex(center, flex-start);
+        flex-direction: column;
+        gap: rem(16);
+
         .title {
-          color: #fff;
-          display: block;
-          font-size: $hm-2;
-          margin-bottom: rem(32);
+          font-size: rem(40);
         }
       }
     }
-  }
-}
 
-.showcase-1 {
-  .logo-alpaca {
-    width: 70%;
-  }
-
-  p {
-    color: $tint;
-    line-height: 1.3;
-  }
-}
-
-.showcase-2 {
-  .showcase__desc {
-    display: block;
-    padding: rem(64) 0;
-
-    .description {
-      width: 70%;
-      p:last-of-type {
-        margin-bottom: rem(80);
+    @include breakpoint(tablet) {
+      padding: rem(16);
+      .slide__picture {
+        width: 100%;
       }
 
-      .about-desc {
+      p {
         line-height: 1.3;
-        margin-bottom: rem(20);
-        color: $tint;
       }
     }
   }
 
-  @include breakpoint(tablet) {
-    .showcase__desc {
-      display: block;
+  &.slide-2 {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    padding: rem(64);
+    @include flex(flex-start, center);
+
+    .description {
+      width: rem(640);
+
+      p:last-of-type {
+        margin-bottom: rem(56);
+      }
+
+      h2 {
+        font-size: $hd-2;
+        color: #fff;
+        margin-bottom: rem(36);
+      }
+
+      .about-desc {
+        color: $tint;
+        margin-bottom: rem(20);
+        line-height: 1.3;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    @include breakpoint(tablet) {
       padding: rem(16);
+      height: 100vh;
 
       .description {
-        padding: 0;
         width: 100%;
-        height: 100%;
+
         p:last-of-type {
           margin-bottom: rem(56);
         }
 
+        h2 {
+          font-size: $hm-2;
+          color: #fff;
+          margin-bottom: rem(36);
+        }
+
         .about-desc {
-          line-height: 1.3;
-          margin-bottom: rem(20);
           color: $tint;
+          margin-bottom: rem(20);
+          line-height: 1.3;
+          font-size: $pm-md;
         }
       }
     }
   }
-}
 
-.showcase-3 {
-  .showcase__desc {
-    @include flex(center, flex-start);
-    flex-direction: column;
-    gap: rem(32);
+  &.slide-3 {
+    width: 100%;
+    height: 100vh;
+    padding: rem(64);
+    background-color: #000;
+    @include flex(flex-start, center);
 
-    .description {
-      width: 70%;
-
-      p {
-        line-height: 1.3;
-        color: $tint;
-      }
-    }
-
-    .stack {
+    .slide__desc {
       @include flex(center, flex-start);
-      gap: rem(16);
-      padding: 0 rem(64);
-    }
-  }
+      flex-direction: column;
+      gap: rem(64);
 
-  @include breakpoint(tablet) {
-    .showcase__desc {
       .description {
-        width: 100%;
-
+        width: rem(640);
+        .title {
+          font-size: $hd-2;
+          color: #fff;
+          margin-bottom: rem(36);
+        }
         p {
-          line-height: 1.3;
           color: $tint;
+          font-size: $pd-md;
+          letter-spacing: 0.5px;
+          line-height: 1.3;
         }
       }
 
       .stack {
-        @include flex(center, flex-start);
+        @include flex(flex-start, center);
         gap: rem(16);
-        padding: 0 rem(16);
+      }
+    }
+
+    @include breakpoint(tablet) {
+      padding: rem(16);
+
+      .slide__desc {
+        @include flex(center, flex-start);
+        flex-direction: column;
+        gap: rem(64);
+
+        .description {
+          width: 100%;
+          .title {
+            font-size: $hd-2;
+            color: #fff;
+            margin-bottom: rem(36);
+          }
+          p {
+            color: $tint;
+            font-size: $pd-md;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+          }
+        }
+
+        .stack {
+          @include flex(flex-start, center);
+          gap: rem(16);
+        }
       }
     }
   }
 }
 
-.showcase-4 {
-  .showcase__picture {
-    @include flex();
-
-    .homepage-display {
-      width: 100%;
-      align-self: flex-end;
-
-      .homepage {
-        width: 100%;
-        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
-      }
-    }
-
-    .profile-display {
-      width: 100%;
-
-      .profile {
-        width: 100%;
-        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
-      }
-    }
-
-    .checkout-display {
-      width: 100%;
-      align-self: flex-start;
-
-      .checkout {
-        width: 100%;
-        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
-      }
-    }
-  }
-}
-
-.showcase-5 {
-  .showcase__picture {
-    @include flex();
-
-    .checkout-display {
-      width: 100%;
-
-      .checkout {
-        width: 70%;
-        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
-      }
-    }
-
-    .login-display {
-      width: 50%;
-      position: absolute;
-      bottom: 5%;
-      right: -15%;
-
-      .login {
-        width: 40%;
-        box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.5);
-      }
-    }
-  }
-}
-
-////////////////////////////////
+//////////////////////
 
 .swiper-pagination-bullet {
   border: 2px solid $complementary;
