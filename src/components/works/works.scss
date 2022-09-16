@@ -21,8 +21,9 @@
     position: relative;
 
     .title {
+      font-family: $font-title;
       font-size: $hd-2;
-      font-weight: 700;
+      font-weight: 500;
       background-color: $primary;
       padding: 0 10px 0 0;
     }
@@ -60,7 +61,7 @@
     flex-direction: column;
 
     .slide__logo {
-      width: 40%;
+      width: 35%;
       .logo {
         width: 100%;
       }
