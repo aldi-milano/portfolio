@@ -6,7 +6,6 @@
   margin: 0 auto;
   width: 100%;
   padding-bottom: rem(96);
-  height: 100vh;
 
   &__content {
     height: 100%;
@@ -43,6 +42,7 @@
       @include flex();
       gap: rem(32);
       flex-direction: column;
+      margin-bottom: rem(96);
 
       .ilustration-container {
         @include flex();
@@ -55,6 +55,35 @@
 
       p {
         color: $tint;
+      }
+    }
+
+    &-achievment {
+      width: 100%;
+      height: 100%;
+      @include flex(flex-start, flex-start);
+      gap: rem(32);
+
+      .certificate {
+        width: 20%;
+
+        h2 {
+          font-size: rem(20);
+          font-weight: 500;
+          margin-bottom: rem(16);
+          line-height: 1.2;
+        }
+
+        p {
+          font-size: $pd-sm;
+          font-weight: 400;
+          color: $tint;
+          line-height: 1.3;
+        }
+
+        .img {
+          width: 100%;
+        }
       }
     }
 
@@ -85,6 +114,36 @@
 
         p {
           font-size: $pm-md;
+        }
+      }
+
+      &-achievment {
+        @include flex();
+        gap: rem(32);
+        flex-direction: column;
+
+        .certificate {
+          width: 100%;
+          border: 1px solid $secondary;
+          padding: 8px;
+
+          h2 {
+            font-size: rem(20);
+            font-weight: 500;
+            margin-bottom: rem(16);
+            line-height: 1.2;
+          }
+
+          p {
+            font-size: $pd-sm;
+            font-weight: 400;
+            color: $tint;
+            line-height: 1.3;
+          }
+
+          .img {
+            width: 100%;
+          }
         }
       }
     }

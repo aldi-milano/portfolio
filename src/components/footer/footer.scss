@@ -1,0 +1,14 @@
+@use '../../scss/utility' as *;
+@use '../../scss/global' as *;
+
+footer {
+  height: rem(36);
+  background-color: #000e1e;
+  color: $tint;
+  font-size: rem(14);
+  @include flex();
+
+  @include breakpoint(tablet) {
+    font-size: rem(10);
+  }
+}
