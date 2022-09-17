@@ -3,8 +3,12 @@ import './footer.scss';
 function Footer() {
   return (
     <footer>
-      &copy; Copyright 2022. Made by{'  '}
-      <a href='https://aldimilano.netlify.app/'>Aldi Milano</a>
+      <p>
+        &copy; Copyright 2022. Made by{' '}
+        <span>
+          <a href='https://aldimilano.netlify.app/'>Aldi Milano</a>
+        </span>
+      </p>
     </footer>
   );
 }

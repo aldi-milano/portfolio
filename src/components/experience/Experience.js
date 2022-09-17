@@ -1,8 +1,6 @@
 import './experience.scss';
 
 import notFound from '../../assets/ilustration/undraw_under_construction_-46-pa.svg';
-import certificate from '../../assets/certificate/certificate.jpg';
-import letter from '../../assets/certificate/letter.jpg';
 
 function Experience() {
   return (
@@ -22,7 +20,7 @@ function Experience() {
             </div>
             <p>Experience will be added soon</p>
           </div>
-          <div className='experience__content-title'>
+          {/* <div className='experience__content-title'>
             <h1 className='title'>Achievment</h1>
           </div>
           <div className='experience__content-achievment'>
@@ -39,7 +37,7 @@ function Experience() {
                 bootcamp program.
               </p>
             </div>
-          </div>
+          </div> */}
         </article>
       </section>
     </>

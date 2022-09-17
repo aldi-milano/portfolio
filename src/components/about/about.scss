@@ -81,6 +81,32 @@
         .paragraph-2 {
           margin-bottom: rem(20);
         }
+
+        .paragraph-3 {
+          margin-bottom: rem(40);
+        }
+
+        .technologies {
+          .paragraph-4 {
+            margin-bottom: rem(20);
+          }
+
+          ul {
+            margin-left: rem(20);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 50%;
+            font-size: rem(16);
+            row-gap: 10px;
+            list-style-type: none;
+
+            li::before {
+              content: '▪';
+              padding-right: 10px;
+              color: $complementary;
+            }
+          }
+        }
       }
     }
 
@@ -113,6 +139,32 @@
         .content__paragraph {
           font-size: $pm-md;
           color: $tint;
+        }
+      }
+
+      .technologies {
+        .paragraph-4 {
+          margin-bottom: rem(20);
+        }
+
+        ul {
+          margin-left: rem(14) !important;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: 90% !important;
+          font-size: rem(14) !important;
+          row-gap: 10px;
+          list-style-type: none;
+
+          li {
+            display: block;
+          }
+
+          li::before {
+            content: '&#9642';
+            padding-right: 5px !important;
+            color: $complementary;
+          }
         }
       }
     }

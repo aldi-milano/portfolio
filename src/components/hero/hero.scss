@@ -69,7 +69,23 @@
       font-weight: 900;
       position: relative;
       letter-spacing: -3px;
-      font-size: rem(64);
+      font-size: rem(72);
+      position: relative;
+      z-index: 2;
+
+      &::before {
+        content: 'Disabled';
+        position: absolute;
+        z-index: -1;
+        color: $secondary;
+        top: 13%;
+        left: -2%;
+        // width: 105%;
+        // height: rem(56);
+        // background-color: $secondary;
+        // transform: skew(-10deg);
+        // box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+      }
     }
   }
 

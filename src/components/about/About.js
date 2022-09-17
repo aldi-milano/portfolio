@@ -44,6 +44,20 @@ function About() {
                 personally. And the most important thing is, I find it really
                 enjoyable and fun.
               </p>
+              <div className='technologies'>
+                <p className='paragraph-4'>
+                  A few technologies I'm familiar and I've been working with :
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>CSS</li>
+                  <li>ReactJS</li>
+                  <li>SCSS</li>
+                  <li>GIT</li>
+                  <li>Tailwind</li>
+                </ul>
+              </div>
             </div>
             <div className='image-profile'>
               <img
