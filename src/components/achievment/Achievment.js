@@ -17,15 +17,15 @@ function Achievment() {
               <h2>Letter of Recomendation</h2>
               <p>
                 For having proven with satisfactory results and attitude
-                throughout programme bootcamp process by Jasa Raharja.
+                throughout programme bootcamp by Jasa Raharja.
               </p>
             </div>
             <div className='certificate'>
               <img src={certificate} alt='letter' className='img' />
               <h2>Certificate Completion with Honors</h2>
               <p>
-                Was given for the best participants Front-End Web Development
-                bootcamp programme by Jasa Raharja.
+                Was given for the best Front-End Web Development bootcamp
+                participants programme by Jasa Raharja.
               </p>
             </div>
           </div>

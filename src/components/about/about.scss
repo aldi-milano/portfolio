@@ -83,10 +83,11 @@
         }
 
         .paragraph-3 {
-          margin-bottom: rem(40);
+          margin-bottom: rem(20);
         }
 
         .technologies {
+          margin-bottom: rem(40);
           .paragraph-4 {
             margin-bottom: rem(20);
           }
@@ -111,6 +112,19 @@
     }
 
     @include breakpoint(tablet) {
+      .technologies {
+        .paragraph-4 {
+          margin-bottom: rem(20);
+        }
+
+        ul {
+          width: 90% !important;
+          font-size: rem(16) !important;
+        }
+      }
+    }
+
+    @include breakpoint(mobile) {
       padding: 0 rem(16);
 
       &__title {

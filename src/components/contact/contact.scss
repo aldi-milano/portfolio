@@ -31,7 +31,7 @@
     }
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(mobile) {
     padding: 0 rem(16);
 
     .contact__content-title {
@@ -70,6 +70,10 @@
         line-height: 1.3;
         letter-spacing: 0.5px;
       }
+
+      @include breakpoint(tablet) {
+        width: rem(540);
+      }
     }
 
     &-icon {
@@ -103,7 +107,7 @@
         }
       }
 
-      @include breakpoint(tablet) {
+      @include breakpoint(mobile) {
         @include flex(flex-start, center);
 
         .link-icon,
@@ -114,7 +118,7 @@
     }
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(mobile) {
     &__content {
       padding: 0 rem(16);
 
@@ -157,6 +161,10 @@ aside {
   }
 
   @include breakpoint(tablet) {
+    align-self: flex-start;
+  }
+
+  @include breakpoint(mobile) {
     display: none;
   }
 }
