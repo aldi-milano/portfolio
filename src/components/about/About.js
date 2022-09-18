@@ -39,14 +39,14 @@ function About() {
                 text.
               </p>
               <p className='paragraph-3'>
-                I found myself having huge passion on everything about Web
-                Development, since I found its disability-friendly nature for me
+                I found myself having huge passion on everything about web
+                development, since I found its disability-friendly nature for me
                 personally. And the most important thing is, I find it really
                 enjoyable and fun.
               </p>
               <div className='technologies'>
                 <p className='paragraph-4'>
-                  A few technologies I'm familiar and I've been working with :
+                  A few technologies i’m familiar and have been working with :
                 </p>
                 <ul>
                   <li>HTML</li>

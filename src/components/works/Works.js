@@ -58,7 +58,7 @@ function Works() {
                 <div className='description'>
                   <h2 className='title'>About The Project</h2>
                   <p className='about-desc'>
-                    This simple fictional <em>so-called</em> E-Commmerce website
+                    This simple fictional <em>so-called</em> e-Commmerce website
                     using <a href='https://fakestoreapi.com/'>Fakestore</a> API
                     which I can use to fetch data that I need to build this
                     website project.
