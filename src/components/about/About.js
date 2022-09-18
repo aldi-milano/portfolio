@@ -5,7 +5,7 @@ import profile from '../../assets/profille-image/portfolio.jpg';
 function About() {
   return (
     <>
-      <section className='about'>
+      <section id='about' className='about'>
         <article className='content'>
           <div className='content__title'>
             <h1 className='title'>About Me</h1>
@@ -31,12 +31,11 @@ function About() {
               <p className='paragraph-2'>
                 You might be wondering or asking how I’m communicating with
                 others? Well, firstly I’m not completely deaf, so I can barely
-                hear what people say in person, but, when it comes to devices
-                such a phone, video conference, TV and any other devices, I can
-                say I can’t hear them properly or nothing at all. If I may
-                explain, it’s more or less like mumbling, gibberish or even
-                static high pitch noise sometimes. So my comprehension best with
-                text.
+                hear what people say in person, but, when it comes to media such
+                a phone, video conference, TV and any other devices, I can say I
+                can’t hear them properly or nothing at all. If I may explain,
+                it’s more or less like mumbling, gibberish or even static high
+                pitch noise sometimes. So my comprehension best with text.
               </p>
               <p className='paragraph-3'>
                 I found myself having huge passion on everything about web

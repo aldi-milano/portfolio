@@ -4,6 +4,7 @@ import Achievment from './components/achievment/Achievment';
 import Contact from './components/contact/Contact';
 import Experience from './components/experience/Experience';
 import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Works from './components/works/Works';
 
@@ -12,7 +13,8 @@ import './scss/index.scss';
 
 function App() {
   return (
-    <div>
+    <main>
+      <Header />
       <Hero />
       <About />
       <Works />
@@ -20,7 +22,7 @@ function App() {
       <Achievment />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
 

@@ -1,2 +1,16 @@
 @forward 'global';
 @use '../scss/utility' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+}

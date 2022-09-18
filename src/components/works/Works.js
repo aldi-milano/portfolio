@@ -21,7 +21,7 @@ import logoM from '../../assets/screenshoot/mobile/alpaca-logo.png';
 function Works() {
   return (
     <>
-      <section className='works'>
+      <section id='works' className='works'>
         <article className='content__works'>
           <div className='container-title'>
             <div className='content__works-title'>

@@ -5,7 +5,7 @@ import notFound from '../../assets/ilustration/undraw_under_construction_-46-pa.
 function Experience() {
   return (
     <>
-      <section className='experience'>
+      <section id='experience' className='experience'>
         <article className='experience__content'>
           <div className='experience__content-title'>
             <h1 className='title'>Experience</h1>

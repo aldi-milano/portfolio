@@ -5,7 +5,7 @@ import cat from '../../assets/ilustration/cat.png';
 function Contact() {
   return (
     <>
-      <div className='container-title'>
+      <div id='contact' className='container-title'>
         <div className='contact__content-title'>
           <h1 className='title'>Get In Touch</h1>
         </div>
