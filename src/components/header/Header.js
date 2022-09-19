@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 
@@ -6,10 +7,18 @@ import './header.scss';
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
+
   function setButtonHandler() {
     setOpen(!isOpen);
-    document.querySelector('.navigation-header').classList.toggle('active');
     document.querySelector('.icon').classList.toggle('closed');
+  }
+
+  const anchors = document.querySelectorAll('.anchor');
+
+  for (let i = 0; i < anchors.length; i++) {
+    anchors[i].addEventListener('click', function (e) {
+      setOpen(false);
+    });
   }
 
   return (
@@ -19,24 +28,35 @@ function Header() {
           <img src={logo} alt='logo website' className='logo' />
         </a>
       </div>
-      <div className='navigation-header'>
+      <div
+        id='nav-header'
+        className={`navigation-header ${isOpen ? 'active' : ''}`}
+      >
         <ul>
           <li>
-            <a href='#about'>About</a>
+            <a className='anchor' href='#about'>
+              About
+            </a>
           </li>
           <li>
-            <a href='#works'>Work</a>
+            <a className='anchor' href='#works'>
+              Work
+            </a>
           </li>
           <li>
-            <a href='#experience'>Experience</a>
+            <a className='anchor' href='#experience'>
+              Experience
+            </a>
           </li>
           <li>
-            <a href='#contact'>Contact</a>
+            <a className='anchor' href='#contact'>
+              Contact
+            </a>
           </li>
           <li className='resume'>
             <a
+              className='anchor'
               href='https://drive.google.com/file/d/1bzdYkIeWs8VFoiKuCfI94abLrh71gHnV/view'
-              className='resume-anchor'
             >
               Resume
             </a>
@@ -46,9 +66,9 @@ function Header() {
       <div className='menu-icon'>
         <button onClick={setButtonHandler}>
           {!isOpen ? (
-            <IoMenuOutline className='icon' />
+            <IoMenuOutline className='icon' name='menu' />
           ) : (
-            <IoCloseOutline className='icon' />
+            <IoCloseOutline className='icon' name='close' />
           )}
         </button>
       </div>

@@ -5,26 +5,24 @@ header {
   max-width: rem(1440);
   margin: 0 auto;
   padding: 0 rem(32);
-  height: rem(60);
-  @include flex(space-between, center);
   background: rgba(0, 24, 51, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
   position: relative;
 
   .header-logo {
     position: absolute;
+    z-index: 2;
     top: 50%;
-    left: 5%;
-    height: 100%;
+    left: 3%;
+    width: rem(50);
     transform: translate(0, -50%);
 
     &-anchor {
       @include flex();
-      height: 100%;
+      width: 100%;
       .logo {
-        height: 85%;
+        width: 100%;
       }
 
       &:hover::after {
@@ -32,27 +30,35 @@ header {
       }
     }
   }
+  .navigation-header {
+    height: rem(60);
+    @include flex(flex-end, center);
+    // background: rgba(0, 24, 51, 0.5);
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(3px);
+    // -webkit-backdrop-filter: blur(3px);
 
-  ul {
-    @include flex();
-    gap: rem(16);
-    font-size: rem(16);
-    height: 100%;
-    li {
-      display: inline-block;
-    }
-
-    .resume {
-      border: 1px solid $complementary;
-      padding: 8px 12px;
-      transition: background-color 0.3s ease-in;
-
-      .resume-anchor:hover::after {
-        width: 0;
+    ul {
+      @include flex();
+      gap: rem(16);
+      font-size: rem(16);
+      height: 100%;
+      li {
+        display: inline-block;
       }
 
-      &:hover {
-        background-color: rgba(255, 146, 43, 0.2);
+      .resume {
+        border: 1px solid $complementary;
+        padding: 8px 12px;
+        transition: background-color 0.3s ease-in;
+
+        .resume-anchor:hover::after {
+          width: 0;
+        }
+
+        &:hover {
+          background-color: rgba(255, 146, 43, 0.2);
+        }
       }
     }
   }
@@ -67,48 +73,52 @@ header {
 
   @include breakpoint(mobile) {
     padding: 0 rem(16);
-    // height: 100vh;
-    position: relative;
+    height: rem(50);
 
-    .navigation-header {
-      position: absolute;
-      opacity: 0;
-      height: 110vh;
-      top: -300%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 24, 51);
-      width: 100%;
-      transition: all 0.3s ease-in-out;
-      ul {
-        flex-direction: column;
-        align-self: flex-end;
-        gap: rem(32);
-        font-size: rem(24);
-      }
-
-      &.active {
-        opacity: 1;
-        top: 50%;
-        transform: translate(-50%, -10%);
-      }
+    .header-logo {
+      top: 50%;
+      left: 5%;
+      width: rem(40);
     }
 
     .menu-icon {
       display: block;
       position: absolute;
-      right: 5%;
       top: 50%;
+      right: 3%;
+      z-index: 5;
       transform: translate(0, -50%);
       .icon {
-        opacity: 1;
         font-size: 32px;
         color: #ff922b;
-        transition: all 0.3s ease-in-out;
+      }
+    }
 
-        &.closed {
-          opacity: 0;
-        }
+    .navigation-header {
+      position: absolute;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 24, 51);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3px);
+      transform: translateY(-100%);
+      transition: all 0.3s ease-in-out;
+      visibility: hidden;
+      pointer-events: none;
+
+      ul {
+        flex-direction: column;
+        gap: rem(24);
+        font-size: rem(20);
+      }
+
+      &.active {
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
       }
     }
   }
