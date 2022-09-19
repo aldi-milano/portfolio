@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 
 import logo from '../../assets/logo/logo.png';
@@ -7,6 +6,8 @@ import './header.scss';
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
 
   function setButtonHandler() {
     setOpen(!isOpen);
@@ -21,8 +22,24 @@ function Header() {
     });
   }
 
+  useEffect(() => {
+    function handleScroll() {
+      let moving = window.pageYOffset;
+      setVisible(position > moving);
+      setPosition(moving);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
+  const display = visible ? 'visible' : 'hidden';
+
   return (
-    <header>
+    <header className={display}>
       <div className='header-logo'>
         <a href='#' className='header-logo-anchor'>
           <img src={logo} alt='logo website' className='logo' />

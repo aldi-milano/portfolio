@@ -8,7 +8,20 @@ header {
   background: rgba(0, 24, 51, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  &.visible {
+    top: 0;
+    transition: top 0.4s ease-out;
+  }
+
+  &.hidden {
+    top: -80px;
+    transition: top 0.4s ease-out;
+  }
 
   .header-logo {
     position: absolute;
@@ -106,6 +119,7 @@ header {
       backdrop-filter: blur(3px);
       transform: translateY(-100%);
       transition: transform 0.3s ease-in-out;
+      z-index: 4;
       // visibility: hidden;
       // pointer-events: none;
 
