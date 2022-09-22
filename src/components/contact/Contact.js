@@ -42,26 +42,6 @@ function Contact() {
                 />
                 +628999253350
               </a>
-              <div className='container-icon'>
-                Social
-                <div className='box-icon'>
-                  <a
-                    href='https://www.facebook.com/milano.aldi.1'
-                    className='link-icon-social'
-                  >
-                    <img
-                      src='https://img.icons8.com/color/48/000000/facebook-new.png'
-                      className='icon facebook'
-                    />
-                  </a>
-                  <a
-                    href='https://www.instagram.com/milano.aldi/'
-                    className='link-icon-social'
-                  >
-                    <img src='https://img.icons8.com/color/48/000000/instagram-new--v1.png' />
-                  </a>
-                </div>
-              </div>
             </div>
           </article>
           <aside>

@@ -5,13 +5,12 @@ html {
   scroll-behavior: smooth;
 }
 
-// main {
-//   position: relative;
+main {
+  max-width: rem(1920);
+  margin: 0 auto;
+  position: relative;
 
-//   header {
-//     position: sticky;
-//     height: rem(60);
-//     top: 0;
-//     z-index: 5;
-//   }
-// }
+  header {
+    position: fixed;
+  }
+}

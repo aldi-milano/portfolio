@@ -73,7 +73,7 @@ function Header() {
           <li className='resume'>
             <a
               className='anchor'
-              href='https://drive.google.com/file/d/1bzdYkIeWs8VFoiKuCfI94abLrh71gHnV/view'
+              href='https://drive.google.com/file/d/1UXz5g2Qi29wfxDh-xEKYxvAjfAc_Hh1U/view?usp=sharing'
             >
               Resume
             </a>
