@@ -20,7 +20,7 @@
 
   .header {
     @include flex(flex-start, center);
-    font-size: rem(56);
+    font-size: rem(48);
     font-weight: 900;
     position: relative;
     letter-spacing: 1px;
@@ -44,7 +44,7 @@
 
     &__position {
       font-weight: 100;
-      font-size: rem(44);
+      font-size: rem(40);
     }
 
     @include breakpoint(tablet) {
@@ -55,6 +55,7 @@
   p {
     font-size: rem(56);
     font-weight: 400;
+    margin-top: rem(16);
 
     .coma {
       font-size: rem(36);
@@ -69,10 +70,11 @@
     .disabled {
       // color: #ec2c39;
       // color: #fee50f;
+      font-family: 'Shrikhand', cursive;
       color: #ff922b;
-      font-weight: 900;
+      font-weight: 400;
       position: relative;
-      letter-spacing: -3px;
+      letter-spacing: -1px;
       font-size: rem(72);
       position: relative;
       z-index: 2;
@@ -82,7 +84,7 @@
         position: absolute;
         z-index: -1;
         color: $secondary;
-        top: 13%;
+        top: 20%;
         left: -2%;
         // width: 105%;
         // height: rem(56);
@@ -103,7 +105,7 @@
     .header {
       @include flex(center, flex-start);
       flex-direction: column;
-      font-size: rem(40);
+      font-size: rem(36);
 
       &::before {
         top: 2%;
@@ -121,14 +123,14 @@
     }
 
     p {
-      font-size: rem(44);
+      font-size: rem(40);
     }
 
     .condition {
-      font-size: rem(44);
+      font-size: rem(40);
 
       .disabled {
-        font-size: rem(48);
+        font-size: rem(52);
       }
     }
   }

@@ -10,7 +10,7 @@ function Hero() {
             <span class='header__position'>FRONT-END DEV</span>
           </h1>
           <p>
-            and<span class='quotation-mark'>,</span>
+            and yes<span class='quotation-mark'>,</span>
           </p>
           <h1 className='condition'>
             I<span className='quotation-mark'>’</span>m{' '}
