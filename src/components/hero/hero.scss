@@ -53,7 +53,7 @@
   }
 
   p {
-    font-size: rem(56);
+    font-size: rem(40);
     font-weight: 400;
     margin-top: rem(16);
 
@@ -64,7 +64,7 @@
   }
 
   .condition {
-    font-size: rem(56);
+    font-size: rem(40);
     font-weight: 400;
 
     .disabled {
@@ -74,8 +74,8 @@
       color: #ff922b;
       font-weight: 400;
       position: relative;
-      letter-spacing: -1px;
-      font-size: rem(72);
+      letter-spacing: -4px;
+      font-size: rem(80);
       position: relative;
       z-index: 2;
 
@@ -123,14 +123,14 @@
     }
 
     p {
-      font-size: rem(40);
+      font-size: rem(32);
     }
 
     .condition {
-      font-size: rem(40);
+      font-size: rem(32);
 
       .disabled {
-        font-size: rem(52);
+        font-size: rem(58);
       }
     }
   }
