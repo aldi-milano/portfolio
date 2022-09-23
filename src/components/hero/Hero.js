@@ -7,11 +7,11 @@ function Hero() {
         <div class='hero__container'>
           <h1 class='header'>
             ALDI MILANO <span class='header__separator'>|</span>
-            <span class='header__position'>FRONT-END DEV</span>
+            <span class='header__position'>FRONT-END DEVELOPER</span>
           </h1>
-          <p>
-            and yes<span class='quotation-mark'>,</span>
-          </p>
+          {/* <p>
+            And yes<span class='quotation-mark'>,</span>
+          </p> */}
           <h1 className='condition'>
             I<span className='quotation-mark'>’</span>m{' '}
             <span className='disabled'>Disabled.</span>

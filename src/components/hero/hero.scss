@@ -23,7 +23,7 @@
     font-size: rem(48);
     font-weight: 900;
     position: relative;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     margin-bottom: rem(10);
     line-height: 1.2;
 
@@ -31,11 +31,16 @@
       content: 'ALDI MILANO';
       display: block;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
       position: absolute;
       top: 3%;
       left: -1%;
       transform: translate(8px, 2px);
+      @include breakpoint(tablet) {
+        top: 2%;
+        left: -2%;
+        transform: translate(10px, 2px);
+      }
     }
 
     &__separator {
@@ -44,7 +49,7 @@
 
     &__position {
       font-weight: 100;
-      font-size: rem(40);
+      font-size: rem(32);
     }
 
     @include breakpoint(tablet) {
@@ -70,12 +75,13 @@
     .disabled {
       // color: #ec2c39;
       // color: #fee50f;
-      font-family: 'Shrikhand', cursive;
+      font-family: 'Lobster', cursive;
+      // font-family: 'Audiowide', cursive;
       color: #ff922b;
-      font-weight: 400;
+      font-weight: 700;
       position: relative;
-      letter-spacing: -4px;
-      font-size: rem(80);
+      letter-spacing: -2px;
+      font-size: rem(96);
       position: relative;
       z-index: 2;
 
@@ -84,7 +90,7 @@
         position: absolute;
         z-index: -1;
         color: $secondary;
-        top: 20%;
+        top: 15%;
         left: -2%;
         // width: 105%;
         // height: rem(56);
@@ -96,7 +102,7 @@
   }
 
   .quotation-mark {
-    font-weight: 900;
+    font-weight: 400;
   }
 
   @include breakpoint(mobile) {
@@ -118,7 +124,7 @@
       }
 
       &__position {
-        font-size: rem(28);
+        font-size: rem(20);
       }
     }
 
