@@ -1,7 +1,7 @@
 import './achievment.scss';
 
 import certificate from '../../assets/certificate/certificate.jpg';
-import letter from '../../assets/certificate/letter.jpg';
+import letter from '../../assets/certificate/letter_revision.jpg';
 
 function Achievment() {
   return (

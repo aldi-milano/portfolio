@@ -71,6 +71,10 @@ header {
         &:hover {
           background-color: rgba(255, 146, 43, 0.2);
         }
+
+        a:hover::after {
+          width: 0;
+        }
       }
     }
   }
